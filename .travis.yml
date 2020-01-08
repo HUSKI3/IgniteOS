@@ -1,2 +1,6 @@
 os: linux
 language: bash
+before_install:
+- chmod +x build.sh
+- sudo ./build.sh
+- sudo ./16_cleanup.sh
