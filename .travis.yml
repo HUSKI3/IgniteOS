@@ -2,7 +2,7 @@ os: linux
 language: bash
 before_install:
 - sudo apt-get -y update
-- sudo apt-get -y install configure wget make gawk gcc bc bison flex xorriso libelf-dev libssl-dev
+- sudo apt-get -y install wget make gawk gcc bc bison flex xorriso libelf-dev libssl-dev
 - chmod +x build.sh
 - sudo ./build.sh
 - sudo ./16_cleanup.sh
