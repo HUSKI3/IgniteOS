@@ -1,5 +1,6 @@
 # FireOS
-https://travis-ci.com/HUSKI3/FireOS.svg?branch=master
+![Build](https://travis-ci.com/HUSKI3/FireOS.svg?branch=master)
+Format: !
 
 Fire Os is a simple linux OS focused on productivity and git tools.
   - Fast and optimized Push and Pull  
