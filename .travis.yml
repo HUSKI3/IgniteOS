@@ -4,3 +4,4 @@ before_install:
 - chmod +x build.sh
 - sudo ./build.sh
 - sudo ./16_cleanup.sh
+- sudo apt-get -y install configure wget make gawk gcc bc bison flex xorriso libelf-dev libssl-dev
