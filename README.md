@@ -1,6 +1,6 @@
 # FireOS
 
-Fire Os is a simple linux OS focused on productivity and git tools.
+Fire Os is a simple linux OS focused on productivity and git tools optimized with all drivers to run on Chromebooks, Netbooks and micro boards.
   - Fast and optimized Push and Pull  
   - Full C library for adding custom components
   - Fully customizable
