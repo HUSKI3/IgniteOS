@@ -77,19 +77,19 @@ FireOS currently has the following packages
 | dropbear | working |
 | felix | working |
 | fio | working |
-| fontconfig | broken - unkown errors |
+| fontconfig | broken - unknown errors |
 | glibc-full | working |
 | golang | working |
 | graalvm | working |
-| kbd | unkown - not tested |
+| kbd | unknown - not tested |
 | kernel_modules | working |
 | kexec_tools | working |
-| libdrm | unkown - not compiled |
-| libevent | unkown - not compiled |
-| libpng | unkown - not compiled |
-| libxau | unkown - not compiled |
-| libxcb | unkown - not compiled |
-| libxdmcp | unkown - not compiled |
+| libdrm | unknown - not compiled |
+| libevent | unknown - not compiled |
+| libpng | unknown - not compiled |
+| libxau | unknown - not compiled |
+| libxcb | unknown - not compiled |
+| libxdmcp | unknown - not compiled |
 | links | broken - headers missing upon compiling |
 | lua | working |
 | make | working |
@@ -103,7 +103,7 @@ FireOS currently has the following packages
 | python | working |
 | rpm | nearly working - Bzip magic error |
 | static_get | working |
-| stress | unkown - not tested |
+| stress | unknown - not tested |
 | sudo | working |
 | vim | working |
 | zulujdk | working |
@@ -125,7 +125,7 @@ No current support
 ### Todos
 
  - Go through more testing
- - Add percistance and partitioning software
+ - Add persistence and partitioning software
  - Add a custom repository manager and packaging system
  
 #### Made possible by:
