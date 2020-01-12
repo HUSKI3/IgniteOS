@@ -1,7 +1,6 @@
 os: linux
 language: bash
 before_install:
-- sudo apt-get -y update
 - sudo apt-get -y install qemu python3 python3-pip
 -  wget --output-document IgniteOS.iso https://uca521acfa88b3490c6b6d0e270a.dl.dropboxusercontent.com/cd/0/get/AwAY7mVC0Hhjx_72mPCZ0sbVpxA_G8aB4_0GJvUGcAzMKGoSPy3q9eVmVWRzmt5jY5WhuPHshx0Fcfyz1Xffci2FL0KztS5FUq1Z5FOIRcibW-6i6cEV9ql2TE9eos53BYo/file# 
 - qemu-system-x86_64 -m 128M -cdrom IgniteOS.iso -boot d -nographic
