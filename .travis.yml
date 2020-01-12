@@ -4,5 +4,5 @@ before_install:
 - sudo apt-get -y update
 - sudo apt-get -y install qemu python3 python3-pip
 - pip3 install gdown
-- gdown gdown https://drive.google.com/uc?12tfMdibheoyz_Gq5Fd1SeB89SInxrseS
+- gdown https://drive.google.com/uc?12tfMdibheoyz_Gq5Fd1SeB89SInxrseS
 - qemu-system-x86_64 IgniteOS.iso
