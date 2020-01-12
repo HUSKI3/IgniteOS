@@ -12,9 +12,9 @@ sleep 10 && poweroff &
 echo "  Ignite will shut down in 10 seconds."
 
 CEOF
-chmod +x minimal_overlay/rootfs/etc/autorun/99_autoshutdown.sh
+chmod +x fire_overlay/rootfs/etc/autorun/99_autoshutdown.sh
 
-cat <<CEOF > minimal_boot/bios/boot/syslinux/syslinux.cfg
+cat <<CEOF > fire_boot/bios/boot/syslinux/syslinux.cfg
 SERIAL 0
 DEFAULT operatingsystem
 LABEL operatingsystem
