@@ -2,5 +2,6 @@ os: linux
 language: bash
 before_install:
 - sudo apt-get -y install qemu python3 python3-pip
--  wget --output-document IgniteOS.iso https://ucf807801670b7963a02862b72fc.dl.dropboxusercontent.com/cd/0/get/AwDj1xiA9yriWZYAcq5WnO71TYMRGcJGjvnXoxxP_eSJ2I3ZgNKHyiBGBXc89dKZSoBpsl779xSwIrrfGiiti3gv5GmskA4JNtI-_M-XGKu6G758UHoPrCuaE6uJLYtds8c/file#
-- qemu-system-x86_64 -m 128M -cdrom IgniteOS.iso -boot d -nographic && kill 1
+- wget --output-document IgniteOS.iso https://ucf807801670b7963a02862b72fc.dl.dropboxusercontent.com/cd/0/get/AwDj1xiA9yriWZYAcq5WnO71TYMRGcJGjvnXoxxP_eSJ2I3ZgNKHyiBGBXc89dKZSoBpsl779xSwIrrfGiiti3gv5GmskA4JNtI-_M-XGKu6G758UHoPrCuaE6uJLYtds8c/file#
+- chmod runtest.sh
+- sudo ./runtest.sh
