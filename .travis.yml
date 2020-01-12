@@ -6,4 +6,5 @@ before_install:
 - pip3 install setuptools
 - pip3 install gdown
 - gdown https://drive.google.com/uc?12tfMdibheoyz_Gq5Fd1SeB89SInxrseS
+- ls
 - qemu-system-x86_64 IgniteOS.iso
