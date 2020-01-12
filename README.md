@@ -71,6 +71,7 @@ IgniteOS currently has the following packages
 | apt | broken |
 | beecrypt | working |
 | bosh_cli | working |
+| Node.js | working |
 | cf_cli | working |
 | c2048 | working |
 | cf_tools | working |
