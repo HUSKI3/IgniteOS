@@ -40,10 +40,7 @@ IgniteOS uses the following tools and requires these dependencies:
 * libelf-dev 
 * libssl-dev
 
-
-### Installation
-
-IgniteOS requires to be run on a Linux operating system
+IgniteOS requires to be built on a Linux operating system
 
 To build use the following command
 
@@ -60,6 +57,10 @@ $ cmod +x update.sh
 $ cmod +x repack.sh
 $ sudo ./update.sh && ./repack.sh
 ```
+
+### Installation
+The guide to install on chromebook: https://github.com/HUSKI3/IgniteOS/wiki/Chromebook-Installation
+The guide to install on micro board: {in progress}
 
 ### Applications
 
