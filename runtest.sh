@@ -2,14 +2,14 @@
 
 set -e
 
-mkdir -p minimal_overlay/rootfs/etc/autorun
-cat << CEOF > minimal_overlay/rootfs/etc/autorun/99_autoshutdown.sh
+mkdir -p fire_overlay/rootfs/etc/autorun
+cat << CEOF > fire_overlay/rootfs/etc/autorun/99_autoshutdown.sh
 #!/bin/sh
 
 # This script shuts down the OS automatically.
 sleep 10 && poweroff &
 
-echo "  Minimal Linux Live will shut down in 10 seconds."
+echo "  Ignite will shut down in 10 seconds."
 
 CEOF
 chmod +x minimal_overlay/rootfs/etc/autorun/99_autoshutdown.sh
@@ -25,14 +25,14 @@ LABEL operatingsystem
 CEOF
 
 ./repackage.sh
-qemu-system-x86_64 -m 256M -cdrom minimal_linux_live.iso -boot d -localtime -nographic &
+qemu-system-x86_64 -m 256M -cdrom IgniteOS.iso -boot d -localtime -nographic &
 
 sleep 5
 if [ "`ps -ef | grep -i [q]emu-system`" = "" ] ; then
-  echo "`date` | !!! FAILURE !!! Minimal Linux Live is not running in QEMU."
+  echo "`date` | !!! FAILURE !!! Ignite is not running in QEMU."
   exit 1
 else
-  echo "`date` | Minimal Linux Live is running in QEMU. Waiting for automatic shutdown."
+  echo "`date` | Ignite is running in QEMU. Waiting for automatic shutdown."
 fi
 
 RETRY=10
@@ -46,9 +46,9 @@ while [ ! "$RETRY" = "0" ] ; do
 done
 
 if [ "`ps -ef | grep -i [q]emu-system`" = "" ] ; then
-  echo "`date` | Minimal Linux Live is not running in QEMU."
+  echo "`date` | Ignite is not running in QEMU."
 else
-  echo "`date` | !!! FAILURE !!! Minimal Linux Live is still running in QEMU."
+  echo "`date` | !!! FAILURE !!! Ignite is still running in QEMU."
   exit 1
 fi
 
@@ -62,6 +62,6 @@ cat << CEOF
 
 CEOF
 
-echo "`date` | *** MLL QEMU test - END ***"
+echo "`date` | *** Ignite QEMU test - END ***"
 
 set +e
