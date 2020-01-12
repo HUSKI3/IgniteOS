@@ -1,6 +1,6 @@
-# FireOS
+# IgniteOS
 
-Fire Os is a simple linux OS focused on productivity and git tools, optimized with all drivers to run on Chromebooks, Netbooks and micro boards.
+Ignite Os is a simple linux OS focused on productivity and git tools, optimized with all drivers to run on Chromebooks, Netbooks and micro boards. (Name was changed from FireOS due to Amazons Android based OS)
   - Fast and optimized Push and Pull  
   - Full C library for adding custom components
   - Fully customizable
@@ -24,7 +24,7 @@ You can also:
 
 ### How to build
 
-FireOS uses the following tools and requires these dependencies:
+IgniteOS uses the following tools and requires these dependencies:
 
 * wget 
 * make 
@@ -40,7 +40,7 @@ FireOS uses the following tools and requires these dependencies:
 
 ### Installation
 
-FireOS requires to be run on a linux operating system
+IgniteOS requires to be run on a linux operating system
 
 To build use the following command
 
@@ -60,7 +60,7 @@ $ sudo ./update.sh && ./repack.sh
 
 ### Applications
 
-FireOS currently has the following packages
+IgniteOS currently has the following packages
 
 | Package | Status |
 | ------ | ------ |
