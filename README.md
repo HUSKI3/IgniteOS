@@ -4,7 +4,7 @@ Ignite Os is a simple linux OS focused on productivity and git tools, optimized 
   - Fast and optimized Push and Pull  
   - Full C library for adding custom components
   - Fully customizable
-  - Runs Live and does not effect main drives
+  - Runs Live and does not affect main drives
 
 # New Features!
 
@@ -18,7 +18,7 @@ You can also:
   - Add custom tools using fire-overlay
 
 
-> Not all functions are working, further development is still required.
+> Not all functions are working. Further development is still required.
 
 
 
@@ -40,7 +40,7 @@ IgniteOS uses the following tools and requires these dependencies:
 
 ### Installation
 
-IgniteOS requires to be run on a linux operating system
+IgniteOS requires to be run on a Linux operating system
 
 To build use the following command
 
