@@ -5,7 +5,10 @@ Ignite Os is a simple linux OS focused on productivity and git tools, optimized 
   - Full C library for adding custom components
   - Fully customizable
   - Runs Live and does not affect main drives
-
+  
+# Features in progress
+  - Node.js 12.14.1 
+  - Bosh_cli 
 # New Features!
 
   - SSH connection
