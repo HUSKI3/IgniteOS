@@ -7,13 +7,12 @@ Ignite Os is a simple linux OS focused on productivity and git tools, optimized 
   - Runs Live and does not affect main drives
   
 # Features in progress
-  - Node.js 12.14.1 
-  - Bosh_cli 
+  - Some kind of desktop enviroment
+  
 # New Features!
 
-  - SSH connection
-  - Network tools
-  - Kernel_headers
+  - Bosh_cli
+  - Node.js
 
 
 You can also:
