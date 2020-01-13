@@ -1,9 +1,10 @@
 # IgniteOS
 <img src="https://document-export.canva.com/DADvyWJmVRc/28/thumbnail/0001-4593677486.png" width="200">
-___
+
+
   - Donwload: http://bit.ly/downloadigniteos
   - Donate: https://paypal.me/HuskieLunar
-___
+
 
 Ignite Os is a simple linux OS focused on productivity and git tools, optimized with all drivers to run on Chromebooks, Netbooks and micro boards. (Name was changed from FireOS due to Amazons Android based OS)
   - Fast and optimized Push and Pull  
