@@ -1,6 +1,5 @@
 # IgniteOS
-![](https://document-export.canva.com/DADvyWJmVRc/28/thumbnail/0001-4593677486.png =250x)
-
+<img src="https://document-export.canva.com/DADvyWJmVRc/28/thumbnail/0001-4593677486.png" width="200">
 ***
   - Donwload: http://bit.ly/downloadigniteos
   - Donate: https://paypal.me/HuskieLunar
