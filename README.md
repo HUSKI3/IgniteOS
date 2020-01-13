@@ -1,5 +1,4 @@
 # IgniteOS
-![Build Status](https://travis-ci.com/HUSKI3/IgniteOS.svg?branch=master)](https://travis-ci.com/HUSKI3/IgniteOS)
 ![](https://document-export.canva.com/DADvyWJmVRc/28/thumbnail/0001-4593677486.png =250x)
 
 ***
