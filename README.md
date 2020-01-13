@@ -13,6 +13,7 @@ Ignite Os is a simple linux OS focused on productivity and git tools, optimized 
   - Runs Live and does not affect main drives
   
 # Features in progress
+  - Docker
   - Some kind of desktop enviroment
   
 # New Features!
