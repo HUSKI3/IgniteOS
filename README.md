@@ -45,6 +45,9 @@ IgniteOS uses the following tools and requires these dependencies:
 * xorriso 
 * libelf-dev 
 * libssl-dev
+```
+$ sudo apt install wget make gawk gcc bc bison flex xorriso libelf-dev libssl-dev
+```
 
 IgniteOS requires to be built on a Linux operating system
 
