@@ -3,7 +3,7 @@
 
 
   - Download (All versions are seperated into different folders): http://bit.ly/downloadigniteos
-  - Donate (Your donations help this projects development): https://paypal.me/HuskieLunar
+  - Donate (<b>Please consider donating! Your donations will increase the speed of the projects development!</b>): https://paypal.me/HuskieLunar
 
 
 Ignite Os is a simple linux OS focused on productivity and git tools, optimized with all drivers to run on Chromebooks, Netbooks and micro boards. (Name was changed from FireOS due to Amazons Android based OS)
