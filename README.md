@@ -1,4 +1,4 @@
-# IgniteOS | Current version: 0.1.2-b2
+# IgniteOS | Current version: 0.1.2-b2 (Docker Support)
 <img src="https://document-export.canva.com/DADvyWJmVRc/28/thumbnail/0001-4593677486.png" width="200">
 
 
