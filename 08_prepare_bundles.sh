@@ -15,7 +15,7 @@ OVERLAY_BUNDLES=`read_property OVERLAY_BUNDLES`
 
 if [ ! "$OVERLAY_BUNDLES" = "" ] ; then
   echo "Generating additional overlay bundles. This may take a while."
-  cd $SRC_DIR/minimal_overlay
+  cd $SRC_DIR/fire_overlay
   ./overlay_build.sh
   cd $SRC_DIR
 else
