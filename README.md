@@ -1,4 +1,4 @@
-# IgniteOS | Current version: 0.1.2-b2 (Docker Support)
+# IgniteOS | Current version: 0.1.2-eo (Fixed VGA boot!)
 <img src="https://document-export.canva.com/DADvyWJmVRc/28/thumbnail/0001-4593677486.png" width="200">
 
 
@@ -21,7 +21,7 @@ Ignite Os is a simple linux OS focused on productivity and git tools, optimized 
 # New Features!
   - <b>Docker support added!</b>
   - Bosh_cli
-  - Node.js
+  -  VGA is finally fixed!
 
 
 You can also:
