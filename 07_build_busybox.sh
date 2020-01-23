@@ -21,15 +21,15 @@ make distclean -j $NUM_JOBS
 # Read the 'USE_PREDEFINED_BUSYBOX_CONFIG' property from '.config'
 USE_PREDEFINED_BUSYBOX_CONFIG=`read_property USE_PREDEFINED_BUSYBOX_CONFIG`
 
-if [ "$USE_PREDEFINED_BUSYBOX_CONFIG" = "true" -a ! -f $SRC_DIR/minimal_config/busybox.config ] ; then
-  echo "Config file $SRC_DIR/minimal_config/busybox.config does not exist."
+if [ "$USE_PREDEFINED_BUSYBOX_CONFIG" = "true" -a ! -f $SRC_DIR/ignite_config/busybox.config ] ; then
+  echo "Config file $SRC_DIR/ignite_config/busybox.config does not exist."
   USE_PREDEFINED_BUSYBOX_CONFIG="false"
 fi
 
 if [ "$USE_PREDEFINED_BUSYBOX_CONFIG" = "true" ] ; then
   # Use predefined configuration file for Busybox.
-  echo "Using config file $SRC_DIR/minimal_config/busybox.config"
-  cp -f $SRC_DIR/minimal_config/busybox.config .config
+  echo "Using config file $SRC_DIR/ignite_config/busybox.config"
+  cp -f $SRC_DIR/ignite_config/busybox.config .config
 else
   # Create default configuration file.
   echo "Generating default Busybox configuration."

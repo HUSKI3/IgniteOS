@@ -17,22 +17,22 @@ make mrproper -j $NUM_JOBS
 # Read the 'USE_PREDEFINED_KERNEL_CONFIG' property from '.config'
 USE_PREDEFINED_KERNEL_CONFIG=`read_property USE_PREDEFINED_KERNEL_CONFIG`
 
-if [ "$USE_PREDEFINED_KERNEL_CONFIG" = "true" -a ! -f $SRC_DIR/minimal_config/kernel.config ] ; then
-  echo "Config file '$SRC_DIR/minimal_config/kernel.config' does not exist."
+if [ "$USE_PREDEFINED_KERNEL_CONFIG" = "true" -a ! -f $SRC_DIR/ignite_config/kernel.config ] ; then
+  echo "Config file '$SRC_DIR/ignite_config/kernel.config' does not exist."
   USE_PREDEFINED_KERNEL_CONFIG=false
 fi
 
 if [ "$USE_PREDEFINED_KERNEL_CONFIG" = "true" ] ; then
   # Use predefined configuration file for the kernel.
-  echo "Using config file '$SRC_DIR/minimal_config/kernel.config'."
-  cp -f $SRC_DIR/minimal_config/kernel.config .config
+  echo "Using config file '$SRC_DIR/ignite_config/kernel.config'."
+  cp -f $SRC_DIR/ignite_config/kernel.config .config
 else
   # Create default configuration file for the kernel.
   make defconfig -j $NUM_JOBS
   echo "Generated default kernel configuration."
 
-  # Changes the name of the system to 'minimal'.
-  sed -i "s/.*CONFIG_DEFAULT_HOSTNAME.*/CONFIG_DEFAULT_HOSTNAME=\"minimal\"/" .config
+  # Changes the name of the system to 'ignite'.
+  sed -i "s/.*CONFIG_DEFAULT_HOSTNAME.*/CONFIG_DEFAULT_HOSTNAME=\"Ignite\"/" .config
 
   # Enable overlay support, e.g. merge ro and rw directories (3.18+).
   sed -i "s/.*CONFIG_OVERLAY_FS.*/CONFIG_OVERLAY_FS=y/" .config
