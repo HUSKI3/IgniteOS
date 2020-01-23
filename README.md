@@ -4,7 +4,7 @@
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/HUSKI3/IgniteOS/)
 
-  - Download (All versions are seperated into different folders): http://bit.ly/downloadigniteos
+  - Download (All versions are seperated into different folders): https://www.dropbox.com/sh/8ucffn5466o29tl/AABBKAD_M5iVMfKzqzG6XK97a?dl=0
   - Donate (<b>Please consider donating! Your donations will increase the speed of the projects development!</b>): https://paypal.me/HuskieLunar
 
 
