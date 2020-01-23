@@ -13,9 +13,7 @@ rm -rf $DEST_DIR
 
 echo "Configuring '$BUNDLE_NAME'."
 CFLAGS="$CFLAGS" ./configure \
-  FORCE_UNSAFE_CONFIGURE=1 \
-  --prefix=/usr 
-
+  --prefix=/usr
 
 echo "Building '$BUNDLE_NAME'."
 make_target

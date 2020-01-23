@@ -2,7 +2,7 @@
 
 set -e
 
-./08_prepare_bundles.sh
+#./08_prepare_bundles.sh
 ./09_generate_rootfs.sh
 ./10_pack_rootfs.sh
 ./11_generate_overlay.sh

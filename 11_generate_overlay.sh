@@ -39,20 +39,20 @@ if [ "$OVERLAY_LOCATION" = "iso" ] && \
 
   # Create sparse image file with 3MB size. Note that this increases the ISO
   # image size.
-  $BUSYBOX truncate -s 3M $ISOIMAGE_OVERLAY/minimal.img
+  $BUSYBOX truncate -s 3M $ISOIMAGE_OVERLAY/ignite.img
 
   # Find available loop device.
   LOOP_DEVICE=$($BUSYBOX losetup -f)
 
   # Associate the available loop device with the sparse image file.
-  $BUSYBOX losetup $LOOP_DEVICE $ISOIMAGE_OVERLAY/minimal.img
+  $BUSYBOX losetup $LOOP_DEVICE $ISOIMAGE_OVERLAY/ignite.img
 
   # Format the sparse image file with Ext2 file system.
   $BUSYBOX mkfs.ext2 $LOOP_DEVICE
 
   # Mount the sparse file in folder 'sparse".
   mkdir $ISOIMAGE_OVERLAY/sparse
-  $BUSYBOX mount $ISOIMAGE_OVERLAY/minimal.img sparse
+  $BUSYBOX mount $ISOIMAGE_OVERLAY/ignite.img sparse
 
   # Create the overlay folders.
   mkdir -p $ISOIMAGE_OVERLAY/sparse/rootfs
@@ -84,14 +84,14 @@ elif [ "$OVERLAY_LOCATION" = "iso" ] && \
   echo "Using folder structure for overlay."
 
   # Create the overlay folders.
-  mkdir -p $ISOIMAGE_OVERLAY/minimal/rootfs
-  mkdir -p $ISOIMAGE_OVERLAY/minimal/work
+  mkdir -p $ISOIMAGE_OVERLAY/ignite/rootfs
+  mkdir -p $ISOIMAGE_OVERLAY/ignite/work
 
   # Copy the overlay content.
   cp -rf $OVERLAY_ROOTFS/* \
-    $ISOIMAGE_OVERLAY/minimal/rootfs
+    $ISOIMAGE_OVERLAY/ignite/rootfs
   cp -r $SRC_DIR/fire_overlay/rootfs/* \
-    $ISOIMAGE_OVERLAY/minimal/rootfs
+    $ISOIMAGE_OVERLAY/ignite/rootfs
 else
   echo "The ISO image will have no overlay structure."
 fi

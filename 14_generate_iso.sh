@@ -10,14 +10,14 @@ uefi() {
   cd $ISOIMAGE
 
   # Now we generate 'hybrid' ISO image file which can also be used on
-  # USB flash drive, e.g. 'dd if=FireOS.iso of=/dev/sdb'.
+  # USB flash drive, e.g. 'dd if=IgniteOS.iso of=/dev/sdb'.
   xorriso -as mkisofs \
     -isohybrid-mbr $WORK_DIR/syslinux/syslinux-*/bios/mbr/isohdpfx.bin \
     -c boot/boot.cat \
     -e boot/uefi.img \
       -no-emul-boot \
       -isohybrid-gpt-basdat \
-    -o $SRC_DIR/FireOS.iso \
+    -o $SRC_DIR/IgniteOS.iso \
     $ISOIMAGE
 }
 
@@ -26,7 +26,7 @@ bios() {
   cd $ISOIMAGE
 
   # Now we generate 'hybrid' ISO image file which can also be used on
-  # USB flash drive, e.g. 'dd if=FireOS.iso of=/dev/sdb'.
+  # USB flash drive, e.g. 'dd if=IgniteOS.iso of=/dev/sdb'.
   xorriso -as mkisofs \
     -isohybrid-mbr $WORK_DIR/syslinux/syslinux-*/bios/mbr/isohdpfx.bin \
     -c boot/syslinux/boot.cat \
@@ -34,7 +34,7 @@ bios() {
       -no-emul-boot \
       -boot-load-size 4 \
       -boot-info-table \
-    -o $SRC_DIR/FireOS.iso \
+    -o $SRC_DIR/IgniteOS.iso \
     $ISOIMAGE
 }
 
@@ -53,7 +53,7 @@ both() {
     -e boot/uefi.img \
       -no-emul-boot \
       -isohybrid-gpt-basdat \
-    -o $SRC_DIR/FireOS.iso \
+    -o $SRC_DIR/IgniteOS.iso \
   $ISOIMAGE
 }
 
@@ -93,7 +93,7 @@ cat << CEOF
 
   #################################################################
   #                                                               #
-  #  ISO image file 'FireOS.iso' has been generated.              #
+  #  ISO image file 'IgniteOS.iso' has been generated.              #
   #                                                               #
   #################################################################
 

@@ -14,7 +14,7 @@ rm -rf $ROOTFS
 cp -r $BUSYBOX_INSTALLED $ROOTFS
 
 # Copy all rootfs resources to the location of our 'rootfs' folder.
-cp -r $SRC_DIR/minimal_rootfs/* $ROOTFS
+cp -r $SRC_DIR/ignite_rootfs/* $ROOTFS
 
 # Delete the '.keep' files which we use in order to keep track of otherwise
 # empty folders.
@@ -68,7 +68,7 @@ if [ "$OVERLAY_LOCATION" = "rootfs" ] && \
   cp -r --remove-destination \
     $OVERLAY_ROOTFS/* $ROOTFS
   cp -r --remove-destination \
-    $SRC_DIR/minimal_overlay/rootfs/* $ROOTFS
+    $SRC_DIR/ignite_overlay/rootfs/* $ROOTFS
 fi
 
 echo "The rootfs area has been generated."

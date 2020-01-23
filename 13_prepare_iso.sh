@@ -50,7 +50,7 @@ prepare_boot_bios() {
   # you may not end up with UEFI shell even if your system supports it.
   # In this case MLL will not boot and you will end up with some kind of
   # UEFI error message.
-  cp -r $SRC_DIR/minimal_boot/bios/* \
+  cp -r $SRC_DIR/ignite_boot/bios/* \
     $ISOIMAGE
 
   # Find the Syslinux build directory.
@@ -78,7 +78,7 @@ prepare_boot_uefi() {
   # you may not end up with UEFI shell even if your system supports it.
   # In this case MLL will not boot and you will end up with some kind of
   # UEFI error message.
-  cp -r $SRC_DIR/minimal_boot/bios/* \
+  cp -r $SRC_DIR/ignite_boot/bios/* \
     $ISOIMAGE
 
   # Find the Syslinux build directory.
