@@ -132,7 +132,8 @@ Want to contribute? Great! You are more than welcome to!
 
 
 ### Docker
-Docker support will be added in the future!
+Docker download is available in the Dropbox folder!
+
 
 #### Kubernetes + Google Cloud
 
