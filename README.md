@@ -79,6 +79,7 @@ IgniteOS currently has the following packages
 
 | Package | Status |
 | ------ | ------ |
+| OpenBox | Building...  |
 | adopt_openjdk | working |
 | apt | broken |
 | beecrypt | working |
