@@ -16,7 +16,7 @@ Ignite Os is a simple linux OS focused on productivity and git tools, optimized 
   
 # Features in progress
   - Persistant installer
-  - Some kind of desktop enviroment [Will take time]
+  - Some kind of desktop enviroment, OpenBox is being installed right now! will be available in normal release 0.1.2-r!
   
 # New Features!
   - <b>Docker support added!</b>
