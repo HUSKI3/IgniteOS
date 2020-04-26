@@ -52,7 +52,12 @@ IgniteOS uses the following tools and requires these dependencies:
 ```
 $ sudo apt install wget make gawk gcc bc bison flex xorriso libelf-dev libssl-dev
 ```
-
+# +Fix for using Node.JS, run the following to fix the "broken - libstdc++.so.6 not found. Being fixed." bug
+```
+$ sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+$ sudo apt-get update
+$ sudo apt-get install libstdc++6-4.7-dev
+```
 IgniteOS requires to be built on a Linux operating system
 
 To build use the following command
@@ -86,7 +91,7 @@ IgniteOS currently has the following packages
 | apt | broken |
 | beecrypt | working |
 | bosh_cli | working |
-| Node.js | broken - libstdc++.so.6 not found. Being fixed. |
+| Node.js | working |
 | cf_cli | working |
 | c2048 | working |
 | cf_tools | working |
