@@ -153,10 +153,6 @@ No current support
  - Add persistence and partitioning software
  - Add a custom repository manager and packaging system
  
-#### Made possible by:
-MLL - https://github.com/ivandavidov/minimal
-Busybox - https://github.com/mirror/busybox
-Linux Kernel - https://www.kernel.org/
 
 License
 ----
