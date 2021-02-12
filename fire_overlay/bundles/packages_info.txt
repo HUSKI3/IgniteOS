@@ -16,3 +16,4 @@ ncurses (Broken, need to recheck versions)
 c2048
 coreutils
 cf_tools
+git (In the works, requires pcre2, subversion, tk and valgrind)
