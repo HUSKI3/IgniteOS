@@ -1,4 +1,4 @@
-# IgniteOS | Current version: 0.1.2-eo (Fixed VGA boot!)
+# IgniteOS | Current version: 0.1.3 (Preparing for a package manager, git support in the works)
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/HUSKI3/IgniteOS/)
 
