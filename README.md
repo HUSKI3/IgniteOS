@@ -1,6 +1,4 @@
 # IgniteOS | Current version: 0.1.2-eo (Fixed VGA boot!)
-<img src="https://images-ext-1.discordapp.net/external/P0u0AmtL_sOL2YWU4eiF3rh3pBzlPIBfV5IBvYR20y0/https/repository-images.githubusercontent.com/231105563/018a4d00-363c-11ea-9661-929de3ee83a3?width=1161&height=653" width="200">
-
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/HUSKI3/IgniteOS/)
 
