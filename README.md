@@ -1,5 +1,9 @@
 # IgniteOS | Current version: 0.1.3 (Preparing for a package manager, git support in the works)
 
+|Dev Log|
+Working on:
+Wayland, Openbox, git (16/02/21)
+
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/HUSKI3/IgniteOS/)
 
   - Download (All versions are seperated into different folders): https://www.dropbox.com/sh/8ucffn5466o29tl/AABBKAD_M5iVMfKzqzG6XK97a?dl=0
@@ -84,7 +88,7 @@ IgniteOS currently has the following packages
 
 | Package | Status |
 | ------ | ------ |
-| OpenBox | Building...  |
+| OpenBox | stale |
 | adopt_openjdk | working |
 | apt | broken |
 | beecrypt | working |
@@ -126,9 +130,11 @@ IgniteOS currently has the following packages
 | rpm | nearly working - Bzip magic error |
 | static_get | working |
 | stress | unknown - not tested |
-| sudo | working |
+| sudo | stale |
 | vim | working |
 | zulujdk | working |
+| git | zlib error - being fixed |
+| wayland | testing |
 
 
 ### Development
