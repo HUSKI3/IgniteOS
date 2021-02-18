@@ -4,17 +4,18 @@ set -e
 
 . ../../common.sh
 
-cd `ls -d $OVERLAY_WORK_DIR/$BUNDLE_NAME/apr-1*`
+cd `ls -d $OVERLAY_WORK_DIR/$BUNDLE_NAME/openssl*`
 
 make_clean
 
 rm -rf $DEST_DIR
 
 echo "Configuring '$BUNDLE_NAME'."
-CFLAGS="$CFLAGS" ./configure  --prefix=/usr \
-	--with-installbuilddir=/usr/share/apr/build\
-	--disable-static
-
+CFLAGS="$CFLAGS" ./configure  --prefix=/usr         \
+         --openssldir=/etc/ssl \
+         --libdir=lib          \
+         shared                \
+         zlib-dynamic
 
 echo "Building '$BUNDLE_NAME'."
 make_target
