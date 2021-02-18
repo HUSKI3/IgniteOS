@@ -4,17 +4,17 @@ set -e
 
 . ../../common.sh
 
-cd `ls -d $OVERLAY_WORK_DIR/$BUNDLE_NAME/apr-1*`
+cd `ls -d $OVERLAY_WORK_DIR/$BUNDLE_NAME/git*`
 
 make_clean
 
 rm -rf $DEST_DIR
 
 echo "Configuring '$BUNDLE_NAME'."
-CFLAGS="$CFLAGS" ./configure  --prefix=/usr \
-	--with-installbuilddir=/usr/share/apr/build\
-	--disable-static
-
+CFLAGS="$CFLAGS" ./configure --prefix=/usr \
+            --with-gitconfig=/etc/gitconfig \
+            --with-python=python3 \
+	    --with-libpcre2
 
 echo "Building '$BUNDLE_NAME'."
 make_target

@@ -11,9 +11,9 @@ make_clean
 rm -rf $DEST_DIR
 
 echo "Configuring '$BUNDLE_NAME'."
-CFLAGS="$CFLAGS" ./configure  --prefix=/usr \
-	--with-installbuilddir=/usr/share/apr/build\
-	--disable-static
+CFLAGS="$CFLAGS" ./configure \
+  --prefix=/usr \
+  --disable-static
 
 
 echo "Building '$BUNDLE_NAME'."

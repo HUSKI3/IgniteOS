@@ -20,7 +20,9 @@ rm -rf $DEST_DIR
 
 echo "Configuring '$BUNDLE_NAME'."
 CFLAGS="$CFLAGS" ./configure \
-  --prefix=/usr CXX="/usr/bin/g++" --enable-optimizations
+  --prefix=/usr CXX="/usr/bin/g++" --enable-optimizations \
+  --with-system-expat\
+  --with-system-ffi
 
 echo "Building '$BUNDLE_NAME'."
 make -j $NUM_JOBS

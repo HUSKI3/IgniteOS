@@ -4,7 +4,7 @@ set -e
 
 . ../../common.sh
 
-cd `ls -d $OVERLAY_WORK_DIR/$BUNDLE_NAME/db-*`
+cd `ls -d $OVERLAY_WORK_DIR/$BUNDLE_NAME/db\
 
 make_clean
 
@@ -16,17 +16,17 @@ sed -i 's/\(__atomic_compare_exchange\)/\1_db/' src/dbinc/atomic.h
 echo "Configuring '$BUNDLE_NAME'."
 cd build_unix
 CFLAGS="$CFLAGS" ../dist/configure --prefix=/usr      \
-		  --enable-dbm       \
                   --enable-compat185 \
+                  --enable-dbm       \
                   --disable-static   \
                   --enable-cxx
 
-# Change ownerships (X - doesnt work)
-#chown -v -R root:root                        \
-#      /usr/bin/db_*                          \
-#      /usr/include/db{,_185,_cxx}.h          \
-#      /usr/lib/libdb*.{so,la}                \
-#      /usr/share/doc/db-5.3.28
+# Change ownerships (?? - Requires testing)
+chown -v -R root:root                        \
+      /usr/bin/db_*                          \
+      /usr/include/db{,_185,_cxx}.h          \
+      /usr/lib/libdb*.{so,la}                \
+      /usr/share/doc/db-5.3.28
 
 echo "Building '$BUNDLE_NAME'."
 make_target

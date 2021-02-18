@@ -4,16 +4,19 @@ set -e
 
 . ../../common.sh
 
-cd `ls -d $OVERLAY_WORK_DIR/$BUNDLE_NAME/apr-1*`
+cd `ls -d $OVERLAY_WORK_DIR/$BUNDLE_NAME/apr-util*`
 
 make_clean
 
 rm -rf $DEST_DIR
 
 echo "Configuring '$BUNDLE_NAME'."
-CFLAGS="$CFLAGS" ./configure  --prefix=/usr \
-	--with-installbuilddir=/usr/share/apr/build\
-	--disable-static
+CFLAGS="$CFLAGS" ./configure --prefix=/usr       \
+            --with-apr=$OVERLAY_WORK_DIR/apr/apr-1.7.0/     \
+            --with-gdbm=/usr    \
+            --with-openssl=/usr \
+	    --with-berkeley-db=$OVERLAY_WORK_DIR/bdb/db-5.3.28/build_unix/\
+            --with-crypto
 
 
 echo "Building '$BUNDLE_NAME'."

@@ -5,7 +5,7 @@ set -e
 . ../../common.sh
 
 # Read the 'pcre2' download URL from '.config'.
-DOWNLOAD_URL="https://archive.apache.org/dist/subversion/subversion-1.14.1.tar.bz2"
+DOWNLOAD_URL=" https://ftp.pcre.org/pub/pcre/pcre2-10.36.tar.bz2"
 
 # Grab everything after the last '/' character.
 ARCHIVE_FILE=${DOWNLOAD_URL##*/}

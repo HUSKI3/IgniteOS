@@ -4,18 +4,15 @@ set -e
 
 . ../../common.sh
 
-cd `ls -d $OVERLAY_WORK_DIR/$BUNDLE_NAME/apr-util*`
-
-make_clean
+cd `ls -d $OVERLAY_WORK_DIR/$BUNDLE_NAME/curl*`
 
 rm -rf $DEST_DIR
 
 echo "Configuring '$BUNDLE_NAME'."
-CFLAGS="$CFLAGS" ./configure --prefix=/usr       \
-            --with-apr=/usr     \
-            --with-gdbm=/usr    \
-            --with-openssl=/usr \
-            --with-crypto
+CFLAGS="$CFLAGS" ./configure --prefix=/usr                           \
+            --disable-static                        \
+            --enable-threaded-resolver              \
+            --with-ca-path=/etc/ssl/certs
 
 
 echo "Building '$BUNDLE_NAME'."
