@@ -28,5 +28,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          ./build.sh
-          ./runtest.sh
+          sudo apt install wget make gawk gcc bc bison flex xorriso libelf-dev libssl-dev -y
+          sudo ./build.sh
+          sudo ./runtest.sh
